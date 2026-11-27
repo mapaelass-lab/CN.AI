@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cn-ai-beta",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-11-26",
+  "assets": { "directory": "./dist", "binding": "ASSETS", "not_found_handling": "single-page-application" },
+  "observability": { "enabled": true },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "cn-ai-reports", "database_id": "REPLACE_WITH_D1_DATABASE_ID" }
+  ],
+}
